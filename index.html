@@ -1,1 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Speed up and reverb audio</title>
+    </head>
+</html>
+<h1>Choose file</h1>
+<button onclick="processFile()">Choose mp3 file</button>
 
+<script>
+    function processFile(){
+        //allow user to select the file
+        const input = document.createElement('input');
+        input.type = 'file';
+        input.accept = 'audio/mp3';
+        input.onchange = function(event){
+            const file = event.target.file[0];
+
+            //use Web Audio API to modify the file 
+            
+        }
+    }
+</script>
